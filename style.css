@@ -1,0 +1,377 @@
+.product-2{
+    width: 70%;
+}
+.product-3{
+    width: 70%;
+}
+
+.column-one{
+    width: 30%;
+}
+.column-2{
+    width: 30%;
+}
+.column-3{
+    width: 30%;
+}
+.swiper-main-container{
+    position: relative;
+}
+.swiper-slide{
+    height: 40vh !important;
+}
+.arrows-container{
+    position: absolute;
+    display: flex;
+
+    top: -40px;
+    right: 0px;
+    z-index: 555;
+}
+.prev,
+.next{
+    background-color: rgb(237, 237, 237) !important;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer !important;
+}
+.fa-solid{
+    font-size: 10px !important;
+    cursor: pointer !important;
+}
+.inner-slide{
+    border: 1px gray solid;
+    max-width: 400px !important;
+    max-height: 500px !important;
+    text-align: center;
+}
+.inner-slide:hover{
+    border: rgb(54, 204, 54) 1px solid;
+    color: rgb(54, 204, 54);
+}
+.swiper-slide img{
+    max-width: 250px;
+    max-height:186px ;
+    object-fit: cover;
+ 
+}
+
+/* small devices */
+@media screen and (max-width:576px)  {
+    .product-1{
+        width: 60%;
+    }
+    .column-one{
+        width: 100%;
+    }
+    .column-2{
+        width: 100%;
+    }
+    .column-3{
+        width: 100%;
+    }
+}
+
+/* mid devices */
+@media screen and (max-width:500px) and (min-width:500px) {
+    .product-1{
+        width: 60%;
+    }
+    .column-one{
+        width: 50%;
+    }
+    .column-2{
+        width: 50%;
+    }
+    .column-3{
+        width: 50%;
+        display: none;
+    }
+}
+/* mid devices */
+@media screen and (min-width:600px)  {
+    .product-1{
+        width: 60%;
+    }
+    .column-one{
+        width: 30%;
+    }
+    .column-2{
+        width: 30%;
+    }
+    .column-3{
+        width: 30%;
+    }
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+
+.holding{
+    max-width: 999px;
+    width: 80%;
+    /* background-color: aquamarine; */
+}
+.secand_cointainar{
+    width: 130%;
+    /* background-color: rgb(45, 184, 17); */
+    
+
+}
+.part_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inner1{
+    position: relative;
+    width: 100%;
+    height: 150%;
+
+}
+.input{
+    font-weight: 700!important;
+    letter-spacing: -.03rem;
+    font-size: calc(1.27813rem + .3375vw);
+}
+.input2{
+    font-weight: 700!important;
+    letter-spacing: -.03rem;
+    font-size: calc(1.27813rem + .3375vw);
+}
+.text_inner{
+    margin-left: 10%;
+    padding-right: 20%;
+    padding: 20px;
+    position: absolute;
+    bottom: 130px;
+    right: 150px;
+    /* background-color: aqua; */
+    color: rgb(20, 20, 20);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    
+ 
+    border-radius: var(--bs-border-radius-lg)!important;
+
+}
+
+.inner1 img{
+    width: 130%;
+    height: 70%;
+    position:sticky;
+    height: 10%;
+    padding: 90px;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.text_inner2{
+    margin-left: 10%;
+    padding-right: 40%;
+    position: relative;
+    padding: 10px;
+    bottom: 280px;
+    right: -40px;
+    /* background-color: aqua; */
+    color: rgb(20, 20, 20);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+ 
+    border-radius: var(--bs-border-radius-lg)!important;
+}
+
+.inner2 img{ 
+    width: 90%;
+    height: 60%;
+    padding: 90px;
+    margin-left: 30px;
+    align-items: center;
+    border-radius: 10%;
+
+
+}
+/* .inner2{
+     position: relative;
+    width: 100%;
+    height: 150%;
+}  */
+.btn_shopnow{
+    background-color: #13152c; /* Green */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.btn_shopnow2{
+    background-color: #13152c; /* Green */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn_shopnow2:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn_shopnow:hover{
+    background-color: black;
+    color: white;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+.row::after{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 50px;
+}
+.text1{
+    color: black;
+    margin-left: 50px;
+    background-color: aqua;
+
+}
+h2{
+    padding-left: 50px;
+    margin-left: 100px;
+    
+    position: relative;
+
+}
+.row{
+    margin: 90px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 40px;
+    text-align: center;
+    align-items: center;
+    font-family: arial;
+  }
+  
+  
+
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(18, 104, 54);
+   
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    font-family: arial;
+  }
+  
+  
+
+  
+  .card2 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(18, 104, 54);
+   
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .card2 button:hover {
+    opacity: 0.7;
+  }
+  .card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    font-family: arial;
+  }
+  
+  
+
+  
+  .card3 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(18, 104, 54);
+   
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .card3 button:hover {
+    opacity: 0.7;
+  }
+  .card4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    font-family: arial;
+  }
+  
+  
+
+  
+  .card4 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(18, 104, 54);
+   
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  
+  .card4 button:hover {
+    opacity: 0.7;
+  }

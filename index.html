@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>freshcart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">FreshCart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Stores
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Account</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="img\img1.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+          <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img\img2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+          <p><a href="#" class="btn btn-primary mt3">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="products-sec">
+    <div class="container mt-5 mb-5">
+      <!-- <div class="row">
+                <div class=" column-one text-center">
+                    <img class="product-1" src="https://images-eu.ssl-images-amazon.com/images/I/41DwPE1rBQS._AC_SX184_.jpg" alt="">
+                    <h6>Product 1</h6>
+                </div>
+                <div class="column-2">
+                    <img class="product-2" src="https://c8.alamy.com/zooms/6/b7089edb499e4cbd8017d0ed6a028c2b/2c8b55m.jpg" alt="">
+                    <h6>Product 2</h6>
+                </div>
+                <div class="column-3">
+                    <img class="product-3" src="https://food.fnr.sndimg.com/content/dam/images/food/products/2020/2/26/rx_bud-light-seltzer-variety-pack.jpeg.rend.hgtvcom.616.616.suffix/1582739511798.jpeg" alt="">
+                    <h6>Product 3</h6>
+                </div>
+            </div> -->
+      <!-- Swiper -->
+      <div class="swiper-main-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-1" src="https://images-eu.ssl-images-amazon.com/images/I/41DwPE1rBQS._AC_SX184_.jpg"
+                  alt="" />
+                <h6>Product 1</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-2" src="https://c8.alamy.com/zooms/6/b7089edb499e4cbd8017d0ed6a028c2b/2c8b55m.jpg"
+                  alt="" />
+                <h6>Product 2</h6>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-3"
+                  src="https://food.fnr.sndimg.com/content/dam/images/food/products/2020/2/26/rx_bud-light-seltzer-variety-pack.jpeg.rend.hgtvcom.616.616.suffix/1582739511798.jpeg"
+                  alt="" />
+                <h6>Product 3</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-3"
+                  src="https://food.fnr.sndimg.com/content/dam/images/food/products/2020/2/26/rx_bud-light-seltzer-variety-pack.jpeg.rend.hgtvcom.616.616.suffix/1582739511798.jpeg"
+                  alt="" />
+                <h6>Product 3</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-3"
+                  src="https://food.fnr.sndimg.com/content/dam/images/food/products/2020/2/26/rx_bud-light-seltzer-variety-pack.jpeg.rend.hgtvcom.616.616.suffix/1582739511798.jpeg"
+                  alt="" />
+                <h6>Product 3</h6>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-slide">
+                <img class="product-3"
+                  src="https://food.fnr.sndimg.com/content/dam/images/food/products/2020/2/26/rx_bud-light-seltzer-variety-pack.jpeg.rend.hgtvcom.616.616.suffix/1582739511798.jpeg"
+                  alt="" />
+                <h6>Product 3</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="arrows-container">
+          <div class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="next"><i class="fa-solid fa-angle-right"></i></div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <section class="holding">
+      <div class="secand_cointainar">
+        <div class="part_row">
+          <div class="inner1">
+            <img src="img\groceries.png">
+             <div class="text_inner">
+              <h4 class="input2">Fruits & Vegetables</h4>
+              <p>Get Upto 30% Off</p>
+              <p><button class="btn_shopnow">shop now</button></p>
+             </div>
+          </div>
+
+          <div class="inner2"> 
+            <img src="img\bread.webp">
+            <div class="text_inner2">
+              <h4 class="input">Freshly Baked Buns</h4>
+              <p>Get Upto 20% Off</p>
+              <p><button class="btn_shopnow2">shop now</button></p>
+             </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section class="holding_proudect">
+      <h2  calss="h2r"style="" >Product Papular</h2>
+         <div class="row">
+          <div class="card">
+         <img  src="img\lays-oregano.webp" alt="Denim Jeans" style="width:50%">
+           <h6><small>Snack &amp;
+           Munchies</small></h6>
+    <h3>Onion Flavour Potato</h3>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card2">
+  <img  src="img\product-img-1.jpg" alt="Denim Jeans" style="width:50%">
+  <h6><small>Snack &amp;
+    Munchies</small></h6>
+    <h4>Haldiram's Sev Bhujia</h4>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card3">
+  <img  src="img\product-img-3.jpg" alt="Denim Jeans" style="width:50%">
+  <h6><small>Snack &amp;
+    Munchies</small></h6>
+    <h5>Cadbury 5 Star Chocolate</h5>
+  <p><button>Add to Cart</button></p>
+</div>
+<div class="card4">
+  <img  src="img\product-img-5.jpg" alt="Denim Jeans" style="width:50%">
+  <h6><small>Snack &amp;
+    Munchies</small></h6>
+    <h5> Salted Instant Popcorn </h5>
+  <p><button>Add to Cart</button></p>
+</div>
+
+</div>
+    </section>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+    integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
